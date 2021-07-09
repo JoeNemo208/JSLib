@@ -1,6 +1,10 @@
+
 var jn=function(a,b,c,d,e,f,g){
 var sel=document.querySelectorAll(a);
-return a;
+return sel;
+};
+sel.prototype.createVar=function(a,b){
+window[a]=b;
 };
 
 var bodys=document.querySelectorAll("*");
