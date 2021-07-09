@@ -6,11 +6,11 @@ var jn = function(a, b, c, d, e, f, g) {
             ad: function(a, b) {
                 for (var i = 0; i < this.sel.length; i++) {
                     this.sel[i]["a"] = b;
-                },
+                }
 
 
-            }
-        }
+            },
+        };
 
             };
 
