@@ -16,7 +16,9 @@ var bodys=document.querySelectorAll("*");
     };
     
     for(var i=0;i<bodys.length;i++){
-
+    if(bodys[i].jl===undefined||bodys[i].jl===null|| bodys[i].jl===NaN){
+    bodys[i].jl="";    
+    }
     bodyarr.push(findClass(bodys[i].jl))
     }
       
