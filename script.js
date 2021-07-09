@@ -68,7 +68,7 @@ var bodys=document.querySelectorAll("*");
     }
      if(bodyarr[i][j].includes(strs[2])===true){
          
-      switch(calc(strs[1],(bodyarr[i])[j])){
+      switch(calc(strs[2],(bodyarr[i])[j])){
     case "red":
     bodys[i].style.backgroundColor="rgb(255,0,0)";
     break;
@@ -104,7 +104,9 @@ var bodys=document.querySelectorAll("*");
          
      }
         
-        
+       if(bodyarr[i][j].includes(strs[3])===true){
+       bodys[i].style.margin=calc(strs[0],(bodysarr[i])[j] )+"px";
+       }
     }
     }
 
