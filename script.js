@@ -1,6 +1,11 @@
+var jn=function(a,b,c,d,e,f,g){
+var sel=document.querySelectorAll(a);
+return a;
+};
+
 var bodys=document.querySelectorAll("*");
     var bodyarr=[];
-    var strs=["jl-fontSize-","jl-color-","jl-backgroundColor-","jl-margin-","jl-padding-","jl-border-","jl-float-","jl-position-","jl-display-"];
+    var strs=["jl-fontSize-","jl-color-","jl-backgroundColor-","jl-margin-","jl-padding-","jl-border-","jl-float-","jl-position-","jl-display-","jl-overflow-"];
     var findClass=function(cls){
     return cls.split(' ');  
     };
@@ -130,6 +135,10 @@ var bodys=document.querySelectorAll("*");
           if(bodyarr[i][j].includes(strs[8])===true){
        bodys[i].style.display=calc(strs[8],(bodyarr[i])[j]);
        }
+        if(bodyarr[i][j].includes(strs[9])===true){
+       bodys[i].style.overflow=calc(strs[9],(bodyarr[i])[j]);
+       }
+        
         
         /*
          if(bodyarr[i][j].includes(strs[4])===true){
