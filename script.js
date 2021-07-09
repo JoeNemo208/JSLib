@@ -1,6 +1,6 @@
 var bodys=document.querySelectorAll("*");
     var bodyarr=[];
-    var strs=["jlib-fontSize-","jlib-color-","jlib-backgroundColor-","jlib-margin-"];
+    var strs=["jlib-fontSize-","jlib-color-","jlib-backgroundColor-","jlib-margin-","jlib-padding-","jlib-border-"];
     var findClass=function(cls){
     return cls.split(' ');  
     };
@@ -106,6 +106,14 @@ var bodys=document.querySelectorAll("*");
         
        if(bodyarr[i][j].includes(strs[3])===true){
        bodys[i].style.margin=calc(strs[3],(bodyarr[i])[j] )+"px";
+       }
+        
+        if(bodyarr[i][j].includes(strs[4])===true){
+       bodys[i].style.padding=calc(strs[4],(bodyarr[i])[j] )+"px";
+       }
+        
+       if(bodyarr[i][j].includes(strs[5])===true){
+       bodys[i].style.border=calc(strs[5],(bodyarr[i])[j] )+"2px solid";
        }
         /*
          if(bodyarr[i][j].includes(strs[4])===true){
