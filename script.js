@@ -1,6 +1,6 @@
 var bodys=document.querySelectorAll("*");
     var bodyarr=[];
-    var strs=["jlib-fontSize-","jlib-color-","jlib-backgroundColor-"];
+    var strs=["jlib-fontSize-","jlib-color-","jlib-backgroundColor-","jlib-margin-"];
     var findClass=function(cls){
     return cls.split(' ');  
     };
