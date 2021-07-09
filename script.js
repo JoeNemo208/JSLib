@@ -105,8 +105,19 @@ var bodys=document.querySelectorAll("*");
      }
         
        if(bodyarr[i][j].includes(strs[3])===true){
-       bodys[i].style.margin=calc(strs[0],(bodysarr[i])[j] )+"px";
+       bodys[i].style.margin=calc(strs[0],(bodyarr[i])[j] )+"px";
        }
+        /*
+         if(bodyarr[i][j].includes(strs[4])===true){
+       bodys[i].style.margin=calc(strs[0],(bodyarr[i])[j] )+"px";
+       }
+         if(bodyarr[i][j].includes(strs[5])===true){
+       bodys[i].style.margin=calc(strs[0],(bodyarr[i])[j] )+"px";
+       }
+         if(bodyarr[i][j].includes(strs[6])===true){
+       bodys[i].style.margin=calc(strs[0],(bodyarr[i])[j] )+"px";
+       }
+       */
     }
     }
 
