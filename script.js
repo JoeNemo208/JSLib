@@ -1,6 +1,6 @@
 var bodys=document.querySelectorAll("*");
     var bodyarr=[];
-    var strs=["jlib-fontSize-","jlib-color-"];
+    var strs=["jlib-fontSize-","jlib-color-","jlib-backgroundColor-"];
     var findClass=function(cls){
     return cls.split(' ');  
     };
@@ -66,10 +66,48 @@ var bodys=document.querySelectorAll("*");
     }
      
     }
-    
-    
+     if(bodyarr[i][j].includes(strs[2])===true){
+         
+      switch(calc(strs[1],(bodyarr[i])[j])){
+    case "red":
+    bodys[i].style.backgroundColor="rgb(255,0,0)";
+    break;
+    case "blue":
+    bodys[i].style.backgroundColor="rgb(0,0,255)";
+    break;
+    case "black":
+    bodys[i].style.backgroundColor="rgb(0,0,0)";
+    break;
+    case "green":
+    bodys[i].style.backgroundColor="rgb(0,255,0)";
+    break;
+    case "yellow":
+    bodys[i].style.backgroundColor="rgb(255,255,0)";
+    break;
+    case "purple":
+    bodys[i].style.backgroundColor="rgb(150, 0, 150)";
+    break;
+    case "orange":
+    bodys[i].style.backgroundColor="rgb(255,155,0)";
+    break;
+    case "white":
+    bodys[i].style.backgroundColor="rgb(255,255,255)";
+    break;
+    case "dark-green":
+    bodys[i].style.backgroundColor="rgb(0,140,0)";
+    break;
+    case "pink":
+    bodys[i].style.backgroundColor="rgb(242, 0, 255)";
+    break;
+        
+    }
+         
+     }
+        
+        
     }
     }
+
    
     
     
