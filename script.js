@@ -105,7 +105,7 @@ var bodys=document.querySelectorAll("*");
      }
         
        if(bodyarr[i][j].includes(strs[3])===true){
-       bodys[i].style.margin=calc(strs[0],(bodyarr[i])[j] )+"px";
+       bodys[i].style.margin=calc(strs[3],(bodyarr[i])[j] )+"px";
        }
         /*
          if(bodyarr[i][j].includes(strs[4])===true){
