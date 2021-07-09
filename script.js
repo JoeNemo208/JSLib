@@ -3,7 +3,7 @@ var jn=function(a,b,c,d,e,f,g){
 var sel=document.querySelectorAll(a);
 return sel;
 };
-sel.prototype.createVar=function(a,b){
+jn.prototype.createVar=function(a,b){
 window[a]=b;
 };
 
