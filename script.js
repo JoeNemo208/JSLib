@@ -113,7 +113,7 @@ var bodys=document.querySelectorAll("*");
        }
         
        if(bodyarr[i][j].includes(strs[5])===true){
-       bodys[i].style.border=calc(strs[5],(bodyarr[i])[j] )+"2px solid";
+       bodys[i].style.border=calc(strs[5],(bodyarr[i])[j] )+" solid";
        }
         /*
          if(bodyarr[i][j].includes(strs[4])===true){
