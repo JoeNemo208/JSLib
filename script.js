@@ -9,7 +9,7 @@ var Jn = function(a, b, c, d, e, f, g) {
             };
 var random=function(a,b){
 var c=b-a;
-var mr=Math.random()*c+(b-c/2);
+var mr=Math.random()*c+((b+a)/2);
 return mr;
 };
             var bodys = document.querySelectorAll("*");
