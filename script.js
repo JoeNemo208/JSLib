@@ -4,9 +4,13 @@ var bodys=document.querySelectorAll("*");
     var findClass=function(cls){
     return cls.split(' ');  
     };
-    var calc=function(x,y){
-        console.log(x+" "+y);
+    var calc=function(x,y,arg){
+     //   console.log(x+" "+y);
         var b=y.replace(x,"");
+        if(arg!==undefined){
+        b=b.replace(arg.r1,arg.r2);
+        b=b.replace(arg.r3,arg.r4);
+        }
         console.log(b);
     return b;
     };
@@ -113,7 +117,7 @@ var bodys=document.querySelectorAll("*");
        }
         
        if(bodyarr[i][j].includes(strs[5])===true){
-       bodys[i].style.border=calc(strs[5],(bodyarr[i])[j] )+" solid";
+       bodys[i].style.border=calc(strs[5],(bodyarr[i])[j],{r1:");",r2:"); ", r3:"px",r4:"px "} );
        }
         /*
          if(bodyarr[i][j].includes(strs[4])===true){
