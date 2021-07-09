@@ -1,7 +1,12 @@
 
 var jn=function(a,b,c,d,e,f,g){
-var sel=document.querySelectorAll(a);
-return sel;
+this.sel=document.querySelectorAll(a);
+return this.sel;
+};
+jn.prototype.app=function(a,b){
+for(var i=0;i<this.sel.length;i++){
+this.sel[i]["a"]=b;
+}
 };
 jn.prototype.createVar=function(a,b){
 window[a]=b;
