@@ -2,13 +2,15 @@
 var jn=function(a,b,c,d,e,f,g){
 this.sel=document.querySelectorAll(a);
 return {
-val:this.sel 
+val:this.sel,
     
 ad:function(a,b){
 for(var i=0;i<this.sel.length;i++){
 this.sel[i]["a"]=b;
 }
+,
        
+    
        
        
 };
