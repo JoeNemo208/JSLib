@@ -1,6 +1,6 @@
 var bodys=document.querySelectorAll("*");
     var bodyarr=[];
-    var strs=["jlib-fontSize-","jlib-color-","jlib-backgroundColor-","jlib-margin-","jlib-padding-","jlib-border-"];
+    var strs=["jl-fontSize-","jl-color-","jl-backgroundColor-","jl-margin-","jl-padding-","jl-border-","jl-float-","jl-position-","jl-display"];
     var findClass=function(cls){
     return cls.split(' ');  
     };
@@ -17,7 +17,7 @@ var bodys=document.querySelectorAll("*");
     
     for(var i=0;i<bodys.length;i++){
 
-    bodyarr.push(findClass(bodys[i].className))
+    bodyarr.push(findClass(bodys[i].jl))
     }
       
     for(var i=0;i<bodys.length;i++){
@@ -119,6 +119,16 @@ var bodys=document.querySelectorAll("*");
        if(bodyarr[i][j].includes(strs[5])===true){
        bodys[i].style.border=calc(strs[5],(bodyarr[i])[j],{r1:");",r2:"); ", r3:"px",r4:"px "} );
        }
+       if(bodyarr[i][j].includes(strs[6])===true){
+       bodys[i].style.float=calc(strs[6],(bodyarr[i])[j]);
+       }
+       if(bodyarr[i][j].includes(strs[7])===true){
+       bodys[i].style.position=calc(strs[7],(bodyarr[i])[j]);
+       }
+          if(bodyarr[i][j].includes(strs[8])===true){
+       bodys[i].style.display=calc(strs[8],(bodyarr[i])[j]);
+       }
+        
         /*
          if(bodyarr[i][j].includes(strs[4])===true){
        bodys[i].style.margin=calc(strs[0],(bodyarr[i])[j] )+"px";
