@@ -19,7 +19,7 @@ var bodys=document.querySelectorAll("*");
     if(bodys[i].jl===undefined||bodys[i].jl===null|| bodys[i].jl===NaN){
     bodys[i].jl="";    
     }
-    bodyarr.push(findClass(bodys[i].jl))
+    bodyarr.push(findClass(bodys[i].className))
     }
       
     for(var i=0;i<bodys.length;i++){
