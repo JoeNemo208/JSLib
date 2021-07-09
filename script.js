@@ -1,6 +1,6 @@
 var bodys=document.querySelectorAll("*");
     var bodyarr=[];
-    var strs=["jl-fontSize-","jl-color-","jl-backgroundColor-","jl-margin-","jl-padding-","jl-border-","jl-float-","jl-position-","jl-display"];
+    var strs=["jl-fontSize-","jl-color-","jl-backgroundColor-","jl-margin-","jl-padding-","jl-border-","jl-float-","jl-position-","jl-display-"];
     var findClass=function(cls){
     return cls.split(' ');  
     };
