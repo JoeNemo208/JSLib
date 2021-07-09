@@ -10,7 +10,7 @@ this.sel[i]["a"]=b;
 }
        
        
-       };
+       
 };
 
 jn.prototype.createVar=function(a,b){
