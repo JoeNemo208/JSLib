@@ -1,17 +1,4 @@
-var Jn = function(a, b, c, d, e, f, g) {
-        this.sel = document.querySelectorAll(a);
-     return this.sel;
 
-            };
-
-            Jn.prototype.createVar = function(a, b) {
-                window[a] = b;
-            };
-var random=function(a,b){
-var c=b-a;
-var mr=Math.random()*c+((b+a)/2)-c/2;
-return mr;
-};
             var bodys = document.querySelectorAll("*");
             var bodyarr = [];
             var strs = ["jl-fontSize-", "jl-color-", "jl-backgroundColor-", "jl-margin-", "jl-padding-", "jl-border-", "jl-float-", "jl-position-", "jl-display-", "jl-overflow-"];
