@@ -12,7 +12,7 @@
                     b = b.replace(arg.r1, arg.r2);
                     b = b.replace(arg.r3, arg.r4);
                 }
-                console.log(b);
+               // console.log(b);
                 return b;
             };
 
